@@ -1,13 +1,5 @@
-﻿Console.WriteLine("Введите значение");
-string s = Console.ReadLine();
-char[] str = s.ToCharArray();
-Array.Reverse(str);
-Console.Write(str);
-Console.ReadKey();
+﻿int n = Convert.ToInt32(Console.ReadLine());
+Console.Write(n % 10);
 
-
-if ()
-{
-
-}
-
+while ((n /= 10) != 0)
+	Console.Write(n % 10);
